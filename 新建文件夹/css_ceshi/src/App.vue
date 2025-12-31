@@ -229,9 +229,6 @@
       flex-direction: column;
       align-items: center;
     }
-    .div-text{ grid-area: text; }
-    .div-img{ grid-area: img; }
-    .div-box{ grid-area: box; }
   }
 </style>
 <style>
