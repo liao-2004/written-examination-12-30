@@ -47,7 +47,7 @@
           <div>
             <svg t="1767080227467" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5575" width="16" height="16"><path d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" fill="#2A4CFE" p-id="5576"></path></svg>
           </div>
-          <div>3</div>
+          <div><span>3</span></div>
         </div>
         <div class="progress-box">
           <div class="progress1"></div>
@@ -240,6 +240,9 @@
     box-sizing: border-box;
     font-family: 'Inter';
     letter-spacing: 0px;
+  }
+  span{
+    user-select: none;
   }
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
  
