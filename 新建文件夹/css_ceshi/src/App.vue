@@ -29,31 +29,32 @@
       <input type="file" id="file-input" :style="{display:'none'}" @change="handlefile">
       <div class="div-form">
         <span class="form-text">Upload file</span>
-        <label for="file-input">
-          <div class="file-div" ref="file_req">
-            <svg :style="{width:'58px',height:'39px'}" t="1767079948480" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10903" width="256" height="256"><path d="M554.666667 550.4V768h192c85.333333-8.533333 149.333333-81.066667 149.333333-170.666667 0-93.866667-76.8-170.666667-170.666667-170.666666h-4.266666c-21.333333-98.133333-106.666667-170.666667-209.066667-170.666667-119.466667 0-213.333333 93.866667-213.333333 213.333333-72.533333 8.533333-128 72.533333-128 149.333334C170.666667 699.733333 238.933333 768 320 768H512v-217.6l-98.133333 98.133333-29.866667-29.866666 149.333333-149.333334 149.333334 149.333334-29.866667 29.866666-98.133333-98.133333z m0 217.6v42.666667h-42.666667v-42.666667h-64v42.666667h-128C213.333333 810.666667 128 725.333333 128 618.666667c0-85.333333 55.466667-157.866667 128-183.466667C273.066667 311.466667 379.733333 213.333333 512 213.333333c110.933333 0 209.066667 72.533333 243.2 170.666667 102.4 12.8 183.466667 102.4 183.466667 213.333333s-85.333333 200.533333-192 213.333334h-128v-42.666667H554.666667z" fill="#1849D6" p-id="10904"></path></svg>
-            <span v-if="file_name.length==0">Drag your resume file to this area, or click on the area to select the appropriate file to upload</span>
-            <span v-else>{{ file_name }}</span>
+          <div class="box-flex">
+          <label for="file-input">
+            <div class="file-div" ref="file_req">
+              <svg :style="{width:'58px',height:'39px'}" t="1767079948480" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10903" width="256" height="256"><path d="M554.666667 550.4V768h192c85.333333-8.533333 149.333333-81.066667 149.333333-170.666667 0-93.866667-76.8-170.666667-170.666667-170.666666h-4.266666c-21.333333-98.133333-106.666667-170.666667-209.066667-170.666667-119.466667 0-213.333333 93.866667-213.333333 213.333333-72.533333 8.533333-128 72.533333-128 149.333334C170.666667 699.733333 238.933333 768 320 768H512v-217.6l-98.133333 98.133333-29.866667-29.866666 149.333333-149.333334 149.333334 149.333334-29.866667 29.866666-98.133333-98.133333z m0 217.6v42.666667h-42.666667v-42.666667h-64v42.666667h-128C213.333333 810.666667 128 725.333333 128 618.666667c0-85.333333 55.466667-157.866667 128-183.466667C273.066667 311.466667 379.733333 213.333333 512 213.333333c110.933333 0 209.066667 72.533333 243.2 170.666667 102.4 12.8 183.466667 102.4 183.466667 213.333333s-85.333333 200.533333-192 213.333334h-128v-42.666667H554.666667z" fill="#1849D6" p-id="10904"></path></svg>
+              <span v-if="file_name.length==0">Drag your resume file to this area, or click on the area to select the appropriate file to upload</span>
+              <span v-else>{{ file_name }}</span>
+            </div>
+          </label>
+          <div class="div-button">
+            <div><span>Last step</span></div>
+            <div><span>Finish</span></div>
           </div>
-        </label>
-        <div class="div-button">
-          <div><span>Last step</span></div>
-          <div><span>Finish</span></div>
-        </div>
-        <div class="progress">
-          <div>
-            <svg t="1767080227467" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5575" width="16" height="16"><path d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" fill="#2A4CFE" p-id="5576"></path></svg>
+          <div class="progress">
+            <div>
+              <svg t="1767080227467" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5575" width="16" height="16"><path d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" fill="#2A4CFE" p-id="5576"></path></svg>
+            </div>
+            <div>
+              <svg t="1767080227467" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5575" width="16" height="16"><path d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" fill="#2A4CFE" p-id="5576"></path></svg>
+            </div>
+            <div><span>3</span></div>
           </div>
-          <div>
-            <svg t="1767080227467" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5575" width="16" height="16"><path d="M392.533333 806.4L85.333333 503.466667l59.733334-59.733334 247.466666 247.466667L866.133333 213.333333l59.733334 59.733334L392.533333 806.4z" fill="#2A4CFE" p-id="5576"></path></svg>
+          <div class="progress-box">
+            <div class="progress1"></div>
+            <div class="progress2"></div>
           </div>
-          <div><span>3</span></div>
         </div>
-        <div class="progress-box">
-          <div class="progress1"></div>
-          <div class="progress2"></div>
-        </div>
-        
       </div>
     </div>
   </div>
@@ -83,10 +84,15 @@
   }
   .div-box{
     grid-area: box;
+    .box-flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .div-form{
     margin-top: 103px;
-    padding-left: 129px;
+    /* padding-left: 129px; */
     padding-top: 30px;
     border-radius: 32px;
     height: 922px;
@@ -113,6 +119,7 @@
     }
   }
   .form-text{
+    margin-left: 129px;
     font-family: "Inter";
     font-weight: 500;
     font-size: 36px;
@@ -200,7 +207,6 @@
   .progress-box{
     position: relative;
     bottom: 20px;
-    margin-left: 167px;
   }
   .progress1{
     background-color: #DDE0E7;
@@ -218,15 +224,9 @@
   }
   @media (max-width: 900px) {
     .box {
-      display: grid;
-      grid-template-columns:1fr;
-      grid-template-rows:repeat(3,1fr);
-      grid-template-areas:
-      "text"
-      "img"
-      "box";
-      width: 100vw;
-      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .div-text{ grid-area: text; }
     .div-img{ grid-area: img; }
