@@ -137,6 +137,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 16px;
     background-image: url("../public/Rectangle 34624658.png");
     span{
       width: 400px;
